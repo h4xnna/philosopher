@@ -27,7 +27,7 @@ This project simulates **N philosophers** seated around a circular table, each a
 ### Compilation
 
 ```bash
-git clone <your-repo>
+git clone git@github.com:h4xnna/philosopher.git
 cd philosopher
 make
 ```
@@ -58,9 +58,6 @@ The `philo` binary will be created in the current directory.
 
 # Same as above, but each philosopher must eat at least 7 times
 ./philo 5 800 200 200 7
-
-# Edge case: 1 philosopher
-./philo 1 800 200 200
 ```
 
 ## 📊 Output Example

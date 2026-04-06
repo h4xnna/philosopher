@@ -46,9 +46,9 @@ all: ${NAME}
 
 ${NAME}: ${OBJS} $(PRINTF)
 
-	@echo $(LIGHT_GREEN) "Compilation..."$(BOLD)
+	@echo -e $(LIGHT_GREEN) "Compilation..."$(BOLD)
 	@${CC} ${CFLAGS} ${OBJS} $(PRINTF) -o ${NAME}
-	@echo $(LIGHT_GREEN)"Compilation réussie ✔"$(RESET)
+	@echo -e $(LIGHT_GREEN)"Compilation réussie ✔"$(RESET)
 
 $(PRINTF):
 	@make -sC  printf -j
@@ -56,12 +56,12 @@ $(PRINTF):
 clean:
 	@rm -f ${OBJS}
 	@make -sC printf clean -j
-	@echo $(BROWN)clean reussi
+	@echo -e $(BROWN)clean reussi $(RESET)
 
 fclean: clean
 	@rm -f ${NAME}
 	@make -sC printf fclean -j
-	@echo $(BROWN)fclean reussi
+	@echo -e $(BROWN)fclean reussi $(RESET)
 
 re: fclean all
 

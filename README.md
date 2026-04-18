@@ -4,7 +4,10 @@
 
 An elegant and robust implementation of the **Dining Philosophers Problem** in C, exploring the fundamental challenges of concurrency, mutex synchronization, and deadlock prevention.
 
-https://github.com/user-attachments/assets/fbca47c1-416a-430b-a03d-9a544070dccf
+
+
+https://github.com/user-attachments/assets/bbec5ac9-f141-4860-9340-5626fa41f568
+
 ## About
 
 This project simulates **N philosophers** seated around a circular table, each alternating between three states: **thinking**, **eating**, and **sleeping**. To eat, a philosopher must acquire both adjacent forks, creating a classic concurrency scenario where management of shared resources becomes critical.

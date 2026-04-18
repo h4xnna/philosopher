@@ -1,14 +1,17 @@
+
+
 # 🍽️ Philosopher
 
 An elegant and robust implementation of the **Dining Philosophers Problem** in C, exploring the fundamental challenges of concurrency, mutex synchronization, and deadlock prevention.
 
-## 📋 About
+https://github.com/user-attachments/assets/fbca47c1-416a-430b-a03d-9a544070dccf
+## About
 
 This project simulates **N philosophers** seated around a circular table, each alternating between three states: **thinking**, **eating**, and **sleeping**. To eat, a philosopher must acquire both adjacent forks, creating a classic concurrency scenario where management of shared resources becomes critical.
 
 **Main objective**: Implement a solution that avoids deadlock and guarantees that philosophers can eat without ever starving.
 
-## 🎯 Features
+## Features
 
 - ✅ **Multi-threaded Simulation**: Each philosopher runs in its own thread
 - ✅ **Mutex Synchronization**: Safe management of shared forks
@@ -17,7 +20,7 @@ This project simulates **N philosophers** seated around a circular table, each a
 - ✅ **Deadlock Prevention**: Robust resource management algorithm
 - ✅ **Customizable**: Adjust the number of philosophers and timings
 
-## 🚀 Installation
+## Installation
 
 ### Prerequisites
 - **Compiler**: gcc/clang
@@ -34,7 +37,7 @@ make
 
 The `philo` binary will be created in the current directory.
 
-## 💻 Usage
+## Usage
 
 ```bash
 ./philo <number_of_philosophers> <time_to_die> <time_to_eat> <time_to_sleep> [number_of_times_each_philosopher_must_eat]
@@ -60,7 +63,7 @@ The `philo` binary will be created in the current directory.
 ./philo 5 800 200 200 7
 ```
 
-## 📊 Output Example
+## Output Example
 
 ```
 0 ms: Philosopher 1 has taken a fork
@@ -71,7 +74,7 @@ The `philo` binary will be created in the current directory.
 ...
 ```
 
-## 🏗️ Architecture
+## Architecture
 
 ```
 philosopher/
@@ -89,7 +92,7 @@ philosopher/
 └── philo.h                # Main header file
 ```
 
-## 🔑 Key Concepts
+## Key Concepts
 
 ### Data Structures
 
@@ -106,7 +109,7 @@ philosopher/
 
 The implementation uses an ordered fork management strategy to avoid circular blocking situations.
 
-## 🧪 Testing
+## Testing
 
 Some interesting test cases:
 
@@ -124,7 +127,7 @@ Some interesting test cases:
 ./philo 200 800 200 200
 ```
 
-## 📝 Cleanup
+## Cleanup
 
 ```bash
 make clean      # Remove object files
@@ -132,28 +135,18 @@ make fclean     # Remove all compiled files
 make re         # Recompile completely
 ```
 
-## 🎓 Learning Outcomes
+## Learning Outcomes
 
 This project covers:
-- 🧵 **Multi-threaded Programming**: Thread creation and management
-- 🔒 **Synchronization**: Mutexes and critical sections
-- ⚠️ **Deadlock & Starvation**: Identification and prevention
-- ⏱️ **Time Management**: Precision timing and timers
-- 🛡️ **Robustness**: Error handling and resource management
-
-## 📚 Resources
-
-- [The Dining Philosophers Problem](https://en.wikipedia.org/wiki/Dining_philosophers_problem)
-- [POSIX Threads Documentation](https://pubs.opengroup.org/onlinepubs/9699919799/basedefs/pthread.h.html)
-- [Thread Safety and Synchronization](https://www.man7.org/linux/man-pages/man3/pthread_mutex_lock.3p.html)
+-  **Multi-threaded Programming**: Thread creation and management
+-  **Synchronization**: Mutexes and critical sections
+-  **Deadlock & Starvation**: Identification and prevention
+-  **Time Management**: Precision timing and timers
+-  **Robustness**: Error handling and resource management
 
 ## 👨‍💻 Author
 
 **hmimouni**
 
-## 📄 License
-
-POSIX threads (pthread), Standard C libraries.
----
 
 **Bon appétit to the philosophers! 🍴✨**

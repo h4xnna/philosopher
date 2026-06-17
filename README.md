@@ -1,3 +1,4 @@
+<img width="698" height="241" alt="Screenshot_20260617_152415" src="https://github.com/user-attachments/assets/6e1ffb7b-ed29-4a16-9d36-f3589623768f" />
 
 
 # 🍽️ Philosopher
